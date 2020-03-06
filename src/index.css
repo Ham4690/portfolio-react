@@ -37,7 +37,9 @@ h3 {
 /* header [start]   */
 
 .header {
+  position: fixed;
   height: 60px;
+  width: 100%;
   border-bottom: 1px solid #eee;
   background-color: gray;
 }
@@ -157,6 +159,7 @@ h3 {
 /* footer [start]  */
 .footer {
   padding: 80px 0;
+  background-color: #2b546a;
 }
 
 .footer-inner {

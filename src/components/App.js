@@ -8,10 +8,11 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <Footer />
+        {/* <Footer /> */}
         {/* <Header />
         <Main />
         <Footer /> */}
+        <Main />
       </React.Fragment>
     );
   }
