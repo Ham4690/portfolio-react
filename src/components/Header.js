@@ -7,6 +7,7 @@ class Header extends React.Component {
         <div className='header-logo'>
           <h2>Portfolio</h2>
         </div>
+        
       </div>
     )
   }
