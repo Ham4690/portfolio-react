@@ -1,4 +1,8 @@
 /* スクロールバーの非表示 */
+* {
+  margin:0;
+  padding:0;
+}
 
 body {
   margin: 0;
@@ -20,7 +24,6 @@ ul {
 
 h1 {
   font-family: "Avenir Next";
-  font-size: 56px;
   font-weight: 400;
   color: #2b546a;
 }
@@ -33,7 +36,6 @@ h2, h3 {
 
 h2 {
   font-size: 24px;
-  margin-top: 8px;
 }
 
 h3 {
@@ -46,7 +48,7 @@ h3 {
 /* header [start]   */
 
 .header {
-  position: fixed;
+  position: absolute;
   height: 60px;
   width: 100%;
   border-bottom: 1px solid #eee;
@@ -78,7 +80,7 @@ h3 {
 .main {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 96px 0;
+  padding-top: 80px;
   text-align: center;
 }
 
@@ -89,14 +91,11 @@ h3 {
   text-align: center;
 }
 
-
-  .profile-icon img {
-    width: 25%;
-    border-radius:50%;
-    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
-  }
-
-
+.profile-icon img {
+  width: 25%;
+  border-radius:50%;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+}
 
 /* profile [end]   */
 .lesson-container {
@@ -116,10 +115,11 @@ h3 {
 .lesson-item {
   border-radius: 4px;
   padding: 48px 0 64px;
+  text-align: center;
 }
 
 .lesson-item img {
-  width: 126px;
+  width: 80%;
 }
 
 .lesson-item p {
@@ -192,38 +192,32 @@ h3 {
 
 /* main [end]  */
 
+/* container [start]  */
+
+#container {
+  width: 100%;
+  position: relaative;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+/* container [end]  */
+
+
+
 /* footer [start]  */
 .footer {
-  padding: 80px 0;
-  background-color: #2b546a;
+  position: fix;
+  width: 100%;
+  padding: 5px 0;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  bottom: 0;
 }
 
 .footer-inner {
-  max-width: 1040px;
-  margin: 0 auto;
-}
-
-.footer-logo {
-  display: inline-block;
-}
-
-.footer-logo img {
-  height: 20px;
-}
-
-.footer-logo p {
-  color: #b1c0c0;
-  font-size: 12px;
-}
-
-.footer-inner ul {
-  float: right;
-}
-
-.footer-inner li {
-  color: #2b546a;
-  display: inline-block;
-  padding-left: 16px;
 }
 
 /* footer [end]   */

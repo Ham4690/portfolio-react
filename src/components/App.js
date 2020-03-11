@@ -3,17 +3,19 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 
+
 class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <div id="container">
         <Header />
         {/* <Footer /> */}
         {/* <Header />
         <Main />
         <Footer /> */}
         <Main />
-      </React.Fragment>
+        <Footer />
+      </div>
     );
   }
 }
