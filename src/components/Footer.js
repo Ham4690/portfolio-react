@@ -5,7 +5,7 @@ class Footer extends React.Component {
     return (
       <div className='footer'>
         <div className='footer-inner'>
-          <p>Footer test</p>
+          <p>(c) 2020 Higashiguchi Arata</p>
         </div>
       </div>
     )

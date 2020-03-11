@@ -34,6 +34,7 @@ class Profile extends React.Component {
           </div>
           <h1>東口新</h1>
           <h2>京都工芸繊維大学 工芸科学科 情報工学課程</h2>
+          
         </div>
         <div className='lesson-container'>
           {lessonList.map((lessonItem) => {

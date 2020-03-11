@@ -13,6 +13,7 @@ class App extends React.Component {
         <Main />
         <Footer /> */}
         <Main />
+        <Footer />
       </React.Fragment>
     );
   }
