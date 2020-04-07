@@ -1,4 +1,8 @@
 import React from 'react'
+import Card from '@material-ui/core/Card'
+import CardHeader from '@material-ui/core/CardHeader'
+import Fab from '@material-ui/core/Fab'
+import CloseIcon from '@material-ui/icons/Close'
 
 class Work extends React.Component {
   constructor(props) {
@@ -20,35 +24,36 @@ class Work extends React.Component {
       modal = (
         <div className='modal'>
           <div className='modal-inner'>
-            <div className='modal-header'></div>
             <div className='modal-introduction'>
               <h2>{this.props.name}</h2>
               <img src={this.props.introduction_image} />
               <p>{this.props.introduction}</p>
             </div>
             {/* onClickイベントを追加してください */}
-            <button
-              className='modal-close-btn'
+            <Fab 
+              color="secondary"
               onClick={() => {this.handleClickClose()}}
             >
-              とじる
-            </button>
+              <CloseIcon/>
+            </Fab>
           </div>
         </div>
       )
     }
 
     return(
-      <div className='lesson-card'>
+      <Card className='lesson-card'>
         <div
           className='lesson-item'
           onClick={() => {this.handleClickLesson()}}
         >
-          <p>{this.props.name}</p>
+          <CardHeader
+            title={this.props.name}
+          />
           <img src={this.props.image} />
         </div>
         {modal}
-      </div>
+      </Card>
     ) 
   }
 }
