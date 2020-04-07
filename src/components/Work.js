@@ -29,7 +29,6 @@ class Work extends React.Component {
               <img src={this.props.introduction_image} />
               <p>{this.props.introduction}</p>
             </div>
-            {/* onClickイベントを追加してください */}
             <Fab 
               color="secondary"
               onClick={() => {this.handleClickClose()}}
