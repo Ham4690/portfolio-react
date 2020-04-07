@@ -17,7 +17,7 @@ class Profile extends React.Component {
         name: 'Reversi',
         image: 'images/reversi-icon.png',
         introduction: 'React.jsで作成したオセロです。',
-        introduction_image: 'images/reversi-img.png',
+        introduction_image: 'images/reversi-img-2.png',
       },
       {
         name: 'LINE Bot',
